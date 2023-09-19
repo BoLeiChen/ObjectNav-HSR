@@ -1,0 +1,14 @@
+dill==0.3.0
+numpy
+pandas
+torch
+torch-scatter
+torch-cluster
+torch-sparse
+torch-spline-conv
+torch-geometric
+torchvision
+tqdm
+seaborn
+matplotlib
+transformers==2.8.0

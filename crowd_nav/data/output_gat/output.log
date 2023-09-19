@@ -1,0 +1,492 @@
+2023-06-13 00:22:57, INFO: Current git head hash code: 8e87aa5ed8221efd688f8e6857ba4c38637bf6e1
+2023-06-13 00:22:57, INFO: Current config content is :<module 'config' from 'data/output_gat/config.py'>
+2023-06-13 00:22:57, INFO: Using device: cuda:0
+2023-06-13 00:22:57, INFO: Planning depth: 1
+2023-06-13 00:22:57, INFO: Planning width: 1
+2023-06-13 00:22:57, INFO: Sparse search: None
+2023-06-13 00:22:59, INFO: Agent is invisible and has holonomic kinematic constraint
+2023-06-13 00:22:59, INFO: Lr: 0.001 for parameters graph_model.pos_embed graph_model.gnn.gcs.0.base_conv.att_src graph_model.gnn.gcs.0.base_conv.att_dst graph_model.gnn.gcs.0.base_conv.bias graph_model.gnn.gcs.0.base_conv.lin_src.weight graph_model.gnn.gcs.1.base_conv.att_src graph_model.gnn.gcs.1.base_conv.att_dst graph_model.gnn.gcs.1.base_conv.bias graph_model.gnn.gcs.1.base_conv.lin_src.weight graph_model.gru1.gru.weight_ih_l0 graph_model.gru1.gru.weight_hh_l0 graph_model.gru1.gru.bias_ih_l0 graph_model.gru1.gru.bias_hh_l0 graph_model.gru2.gru.weight_ih_l0 graph_model.gru2.gru.weight_hh_l0 graph_model.gru2.gru.bias_ih_l0 graph_model.gru2.gru.bias_hh_l0 graph_model.gru4.gru.weight_ih_l0 graph_model.gru4.gru.weight_hh_l0 graph_model.gru4.gru.bias_ih_l0 graph_model.gru4.gru.bias_hh_l0 graph_model.gru3.gru.weight_ih_l0 graph_model.gru3.gru.weight_hh_l0 graph_model.gru3.gru.bias_ih_l0 graph_model.gru3.gru.bias_hh_l0 graph_model.human_linear1.weight graph_model.human_linear1.bias graph_model.human_linear2.weight graph_model.human_linear2.bias graph_model.robot_linear1.weight graph_model.robot_linear1.bias graph_model.robot_linear2.weight graph_model.robot_linear2.bias graph_model.obstacle_attn.key_project.weight graph_model.obstacle_attn.key_project.bias graph_model.obstacle_attn.value_project.weight graph_model.obstacle_attn.value_project.bias graph_model.obstacle_linear.weight graph_model.obstacle_linear.bias graph_model.robot_embedding.weight graph_model.robot_embedding.bias graph_model.robot_embedding1.weight graph_model.robot_embedding1.bias graph_model.map_linear.weight graph_model.map_linear.bias graph_model.mapconv.conv1.weight graph_model.mapconv.conv1.bias graph_model.mapconv.layer1.0.conv1.weight graph_model.mapconv.layer1.0.conv1.bias graph_model.mapconv.layer1.0.conv2.weight graph_model.mapconv.layer1.0.conv2.bias graph_model.mapconv.layer1.1.conv1.weight graph_model.mapconv.layer1.1.conv1.bias graph_model.mapconv.layer1.1.conv2.weight graph_model.mapconv.layer1.1.conv2.bias graph_model.mapconv.layer2.0.conv1.weight graph_model.mapconv.layer2.0.conv1.bias graph_model.mapconv.layer2.0.conv2.weight graph_model.mapconv.layer2.0.conv2.bias graph_model.mapconv.layer2.0.downsample.0.weight graph_model.mapconv.layer2.0.downsample.0.bias graph_model.mapconv.layer2.1.conv1.weight graph_model.mapconv.layer2.1.conv1.bias graph_model.mapconv.layer2.1.conv2.weight graph_model.mapconv.layer2.1.conv2.bias graph_model.mapconv.layer3.0.conv1.weight graph_model.mapconv.layer3.0.conv1.bias graph_model.mapconv.layer3.0.conv2.weight graph_model.mapconv.layer3.0.conv2.bias graph_model.mapconv.layer3.0.downsample.0.weight graph_model.mapconv.layer3.0.downsample.0.bias graph_model.mapconv.layer3.1.conv1.weight graph_model.mapconv.layer3.1.conv1.bias graph_model.mapconv.layer3.1.conv2.weight graph_model.mapconv.layer3.1.conv2.bias graph_model.mapconv.conv2.weight graph_model.mapconv.conv2.bias graph_model.mapconv.conv3.weight graph_model.mapconv.conv3.bias value_network.0.weight value_network.0.bias value_network.2.weight value_network.2.bias value_network.4.weight value_network.4.bias value_network.6.weight value_network.6.bias graph_model.pos_embed graph_model.gnn.gcs.0.base_conv.att_src graph_model.gnn.gcs.0.base_conv.att_dst graph_model.gnn.gcs.0.base_conv.bias graph_model.gnn.gcs.0.base_conv.lin_src.weight graph_model.gnn.gcs.1.base_conv.att_src graph_model.gnn.gcs.1.base_conv.att_dst graph_model.gnn.gcs.1.base_conv.bias graph_model.gnn.gcs.1.base_conv.lin_src.weight graph_model.gru1.gru.weight_ih_l0 graph_model.gru1.gru.weight_hh_l0 graph_model.gru1.gru.bias_ih_l0 graph_model.gru1.gru.bias_hh_l0 graph_model.gru2.gru.weight_ih_l0 graph_model.gru2.gru.weight_hh_l0 graph_model.gru2.gru.bias_ih_l0 graph_model.gru2.gru.bias_hh_l0 graph_model.gru4.gru.weight_ih_l0 graph_model.gru4.gru.weight_hh_l0 graph_model.gru4.gru.bias_ih_l0 graph_model.gru4.gru.bias_hh_l0 graph_model.gru3.gru.weight_ih_l0 graph_model.gru3.gru.weight_hh_l0 graph_model.gru3.gru.bias_ih_l0 graph_model.gru3.gru.bias_hh_l0 graph_model.human_linear1.weight graph_model.human_linear1.bias graph_model.human_linear2.weight graph_model.human_linear2.bias graph_model.robot_linear1.weight graph_model.robot_linear1.bias graph_model.robot_linear2.weight graph_model.robot_linear2.bias graph_model.obstacle_attn.key_project.weight graph_model.obstacle_attn.key_project.bias graph_model.obstacle_attn.value_project.weight graph_model.obstacle_attn.value_project.bias graph_model.obstacle_linear.weight graph_model.obstacle_linear.bias graph_model.robot_embedding.weight graph_model.robot_embedding.bias graph_model.robot_embedding1.weight graph_model.robot_embedding1.bias graph_model.map_linear1.weight graph_model.map_linear1.bias graph_model.map_linear2.weight graph_model.map_linear2.bias graph_model.mapconv.conv1.weight graph_model.mapconv.conv1.bias graph_model.mapconv.layer1.0.conv1.weight graph_model.mapconv.layer1.0.conv1.bias graph_model.mapconv.layer1.0.conv2.weight graph_model.mapconv.layer1.0.conv2.bias graph_model.mapconv.layer1.1.conv1.weight graph_model.mapconv.layer1.1.conv1.bias graph_model.mapconv.layer1.1.conv2.weight graph_model.mapconv.layer1.1.conv2.bias graph_model.mapconv.layer2.0.conv1.weight graph_model.mapconv.layer2.0.conv1.bias graph_model.mapconv.layer2.0.conv2.weight graph_model.mapconv.layer2.0.conv2.bias graph_model.mapconv.layer2.0.downsample.0.weight graph_model.mapconv.layer2.0.downsample.0.bias graph_model.mapconv.layer2.1.conv1.weight graph_model.mapconv.layer2.1.conv1.bias graph_model.mapconv.layer2.1.conv2.weight graph_model.mapconv.layer2.1.conv2.bias graph_model.mapconv.layer3.0.conv1.weight graph_model.mapconv.layer3.0.conv1.bias graph_model.mapconv.layer3.0.conv2.weight graph_model.mapconv.layer3.0.conv2.bias graph_model.mapconv.layer3.0.downsample.0.weight graph_model.mapconv.layer3.0.downsample.0.bias graph_model.mapconv.layer3.1.conv1.weight graph_model.mapconv.layer3.1.conv1.bias graph_model.mapconv.layer3.1.conv2.weight graph_model.mapconv.layer3.1.conv2.bias graph_model.mapconv.conv2.weight graph_model.mapconv.conv2.bias graph_model.mapconv.conv3.weight graph_model.mapconv.conv3.bias human_motion_predictor.0.weight human_motion_predictor.0.bias human_motion_predictor.2.weight human_motion_predictor.2.bias map_predictor.conv1.weight map_predictor.conv1.bias map_predictor.conv2.weight map_predictor.conv2.bias map_predictor.conv3.weight map_predictor.conv3.bias map_predictor.conv4.weight map_predictor.conv4.bias with Adam optimizer
+2023-06-13 00:36:09, INFO: TRAIN in episode 0 has success rate: 0.02, collision rate: 0.16, collisionobs rate: 0.74, nav time: 50.00, total reward: -1.0876,average return: -0.5493, SPL: 0.0200
+2023-06-13 00:36:09, INFO: Experience set size: 253/20000
+2023-06-13 00:36:31, INFO: TRAIN in episode 0 has success rate: 0.00, collision rate: 0.00, collisionobs rate: 1.00, nav time: 500.00, total reward: -0.3504,average return: -0.3147, SPL: 0.0000
+2023-06-13 00:37:01, INFO: Average loss : 4.246492, 87761.963379
+2023-06-13 00:38:49, INFO: TRAIN in episode 1 has success rate: 0.00, collision rate: 0.00, collisionobs rate: 0.50, nav time: 500.00, total reward: -1.9942,average return: -1.0091, SPL: 0.0000
+2023-06-13 00:39:19, INFO: Average loss : 3.504472, 83402.776855
+2023-06-13 00:39:31, INFO: TRAIN in episode 2 has success rate: 0.00, collision rate: 0.00, collisionobs rate: 1.00, nav time: 500.00, total reward: 0.0308,average return: -0.1170, SPL: 0.0000
+2023-06-13 00:40:00, INFO: Average loss : 4.509726, 81092.655273
+2023-06-13 00:40:10, INFO: TRAIN in episode 3 has success rate: 0.00, collision rate: 0.00, collisionobs rate: 1.00, nav time: 500.00, total reward: -2.1332,average return: -1.8104, SPL: 0.0000
+2023-06-13 00:40:39, INFO: Average loss : 3.905733, 81840.835938
+2023-06-13 00:40:45, INFO: TRAIN in episode 4 has success rate: 0.00, collision rate: 0.00, collisionobs rate: 1.00, nav time: 500.00, total reward: -0.4416,average return: -0.4369, SPL: 0.0000
+2023-06-13 00:41:14, INFO: Average loss : 3.498789, 88656.291992
+2023-06-13 00:41:47, INFO: TRAIN in episode 5 has success rate: 0.00, collision rate: 0.00, collisionobs rate: 1.00, nav time: 500.00, total reward: -3.1144,average return: -2.1522, SPL: 0.0000
+2023-06-13 00:42:17, INFO: Average loss : 3.444639, 79206.840332
+2023-06-13 00:45:41, INFO: TRAIN in episode 6 has success rate: 0.00, collision rate: 0.00, collisionobs rate: 0.00, nav time: 500.00, total reward: -0.0025,average return: -0.0069, SPL: 0.0000
+2023-06-13 00:46:11, INFO: Average loss : 3.934702, 76050.904297
+2023-06-13 00:47:53, INFO: TRAIN in episode 7 has success rate: 0.00, collision rate: 0.00, collisionobs rate: 0.50, nav time: 500.00, total reward: -2.5831,average return: -1.3541, SPL: 0.0000
+2023-06-13 00:48:23, INFO: Average loss : 3.045638, 72005.486816
+2023-06-13 00:50:48, INFO: TRAIN in episode 8 has success rate: 0.00, collision rate: 0.50, collisionobs rate: 0.00, nav time: 500.00, total reward: -0.0047,average return: -0.0706, SPL: 0.0000
+2023-06-13 00:51:17, INFO: Average loss : 3.544803, 71282.990234
+2023-06-13 00:51:28, INFO: TRAIN in episode 9 has success rate: 0.00, collision rate: 0.50, collisionobs rate: 0.50, nav time: 500.00, total reward: -0.8020,average return: 0.8597, SPL: 0.0000
+2023-06-13 00:51:57, INFO: Average loss : 2.407089, 59344.905273
+2023-06-13 00:52:29, INFO: TRAIN in episode 10 has success rate: 0.00, collision rate: 0.00, collisionobs rate: 1.00, nav time: 500.00, total reward: -1.0527,average return: -0.4964, SPL: 0.0000
+2023-06-13 00:52:58, INFO: Average loss : 3.737417, 44720.415283
+2023-06-13 00:53:02, INFO: TRAIN in episode 11 has success rate: 0.00, collision rate: 0.00, collisionobs rate: 1.00, nav time: 500.00, total reward: -0.2837,average return: -0.2669, SPL: 0.0000
+2023-06-13 00:53:32, INFO: Average loss : 3.796800, 29866.638672
+2023-06-13 00:53:38, INFO: TRAIN in episode 12 has success rate: 0.00, collision rate: 0.00, collisionobs rate: 1.00, nav time: 500.00, total reward: -0.4860,average return: 0.6749, SPL: 0.0000
+2023-06-13 00:54:07, INFO: Average loss : 3.208361, 19082.291870
+2023-06-13 00:54:12, INFO: TRAIN in episode 13 has success rate: 0.00, collision rate: 0.50, collisionobs rate: 0.50, nav time: 500.00, total reward: -1.3141,average return: -0.8445, SPL: 0.0000
+2023-06-13 00:54:41, INFO: Average loss : 2.778411, 11243.791626
+2023-06-13 00:56:34, INFO: TRAIN in episode 14 has success rate: 0.00, collision rate: 0.50, collisionobs rate: 0.00, nav time: 500.00, total reward: -0.1153,average return: -0.1963, SPL: 0.0000
+2023-06-13 00:57:03, INFO: Average loss : 3.596980, 12687.313721
+2023-06-13 00:58:05, INFO: TRAIN in episode 15 has success rate: 0.00, collision rate: 0.50, collisionobs rate: 0.50, nav time: 500.00, total reward: -0.1658,average return: -0.2368, SPL: 0.0000
+2023-06-13 00:58:34, INFO: Average loss : 2.398850, 11922.627258
+2023-06-13 01:01:01, INFO: TRAIN in episode 16 has success rate: 0.00, collision rate: 1.00, collisionobs rate: 0.00, nav time: 500.00, total reward: -0.3671,average return: -0.1172, SPL: 0.0000
+2023-06-13 01:01:30, INFO: Average loss : 1.483969, 12542.842407
+2023-06-13 01:03:12, INFO: TRAIN in episode 17 has success rate: 0.00, collision rate: 0.00, collisionobs rate: 0.50, nav time: 500.00, total reward: -0.1250,average return: -0.1250, SPL: 0.0000
+2023-06-13 01:03:41, INFO: Average loss : 2.068913, 10181.030762
+2023-06-13 01:03:58, INFO: TRAIN in episode 18 has success rate: 0.00, collision rate: 0.50, collisionobs rate: 0.50, nav time: 500.00, total reward: -0.3076,average return: -0.3351, SPL: 0.0000
+2023-06-13 01:04:27, INFO: Average loss : 2.015970, 10687.735657
+2023-06-13 01:06:18, INFO: TRAIN in episode 19 has success rate: 0.00, collision rate: 0.50, collisionobs rate: 0.00, nav time: 500.00, total reward: -0.1223,average return: -0.1865, SPL: 0.0000
+2023-06-13 01:06:47, INFO: Average loss : 2.228804, 10802.858948
+2023-06-13 01:07:01, INFO: TRAIN in episode 20 has success rate: 0.00, collision rate: 0.00, collisionobs rate: 1.00, nav time: 500.00, total reward: -1.6292,average return: -0.5124, SPL: 0.0000
+2023-06-13 01:07:31, INFO: Average loss : 1.936691, 10951.657471
+2023-06-13 01:07:33, INFO: TRAIN in episode 21 has success rate: 0.00, collision rate: 0.00, collisionobs rate: 1.00, nav time: 500.00, total reward: -0.2500,average return: -0.2500, SPL: 0.0000
+2023-06-13 01:08:02, INFO: Average loss : 2.896090, 11505.410461
+2023-06-13 01:10:09, INFO: TRAIN in episode 22 has success rate: 0.00, collision rate: 0.00, collisionobs rate: 0.50, nav time: 500.00, total reward: -0.0620,average return: -0.0533, SPL: 0.0000
+2023-06-13 01:10:38, INFO: Average loss : 1.789648, 10836.872559
+2023-06-13 01:10:48, INFO: TRAIN in episode 23 has success rate: 0.00, collision rate: 0.50, collisionobs rate: 0.50, nav time: 500.00, total reward: -0.2234,average return: -0.3018, SPL: 0.0000
+2023-06-13 01:11:18, INFO: Average loss : 1.987509, 9679.273071
+2023-06-13 01:12:22, INFO: TRAIN in episode 24 has success rate: 0.00, collision rate: 1.00, collisionobs rate: 0.00, nav time: 500.00, total reward: -0.1177,average return: -0.1948, SPL: 0.0000
+2023-06-13 01:12:51, INFO: Average loss : 1.804122, 10503.870850
+2023-06-13 01:16:29, INFO: TRAIN in episode 25 has success rate: 0.00, collision rate: 0.00, collisionobs rate: 0.00, nav time: 500.00, total reward: 0.0000,average return: 0.0000, SPL: 0.0000
+2023-06-13 01:16:58, INFO: Average loss : 2.834984, 9933.703857
+2023-06-13 01:17:01, INFO: TRAIN in episode 26 has success rate: 0.00, collision rate: 0.00, collisionobs rate: 1.00, nav time: 500.00, total reward: -0.3074,average return: -0.2787, SPL: 0.0000
+2023-06-13 01:17:30, INFO: Average loss : 1.982240, 10809.091492
+2023-06-13 01:20:52, INFO: TRAIN in episode 27 has success rate: 0.00, collision rate: 0.00, collisionobs rate: 0.00, nav time: 500.00, total reward: 0.0568,average return: 0.0006, SPL: 0.0000
+2023-06-13 01:21:21, INFO: Average loss : 1.326283, 9443.417664
+2023-06-13 01:23:45, INFO: TRAIN in episode 28 has success rate: 0.00, collision rate: 0.50, collisionobs rate: 0.00, nav time: 500.00, total reward: -0.0057,average return: -0.0682, SPL: 0.0000
+2023-06-13 01:24:14, INFO: Average loss : 2.140448, 10062.455322
+2023-06-13 01:25:56, INFO: TRAIN in episode 29 has success rate: 0.00, collision rate: 0.00, collisionobs rate: 0.50, nav time: 500.00, total reward: -0.1250,average return: -0.1250, SPL: 0.0000
+2023-06-13 01:26:25, INFO: Average loss : 1.692897, 10009.768982
+2023-06-13 01:27:04, INFO: TRAIN in episode 30 has success rate: 0.00, collision rate: 1.00, collisionobs rate: 0.00, nav time: 500.00, total reward: -0.1908,average return: -0.3084, SPL: 0.0000
+2023-06-13 01:27:32, INFO: Average loss : 1.971838, 9251.380859
+2023-06-13 01:28:08, INFO: TRAIN in episode 31 has success rate: 0.00, collision rate: 0.50, collisionobs rate: 0.50, nav time: 500.00, total reward: -0.8262,average return: -0.8213, SPL: 0.0000
+2023-06-13 01:28:37, INFO: Average loss : 2.610370, 9838.554138
+2023-06-13 01:28:42, INFO: TRAIN in episode 32 has success rate: 0.00, collision rate: 0.00, collisionobs rate: 1.00, nav time: 500.00, total reward: -0.2687,average return: -0.2620, SPL: 0.0000
+2023-06-13 01:29:11, INFO: Average loss : 1.603719, 8302.567749
+2023-06-13 01:29:30, INFO: TRAIN in episode 33 has success rate: 0.00, collision rate: 0.50, collisionobs rate: 0.50, nav time: 500.00, total reward: -0.5189,average return: -0.5298, SPL: 0.0000
+2023-06-13 01:29:59, INFO: Average loss : 2.319343, 7700.662964
+2023-06-13 01:30:29, INFO: TRAIN in episode 34 has success rate: 0.00, collision rate: 0.50, collisionobs rate: 0.50, nav time: 500.00, total reward: -0.1350,average return: -0.2194, SPL: 0.0000
+2023-06-13 01:30:58, INFO: Average loss : 1.871070, 6595.596375
+2023-06-13 01:33:26, INFO: TRAIN in episode 35 has success rate: 0.00, collision rate: 0.50, collisionobs rate: 0.00, nav time: 500.00, total reward: -0.2560,average return: -0.2530, SPL: 0.0000
+2023-06-13 01:33:55, INFO: Average loss : 1.542288, 6188.099243
+2023-06-13 01:37:17, INFO: TRAIN in episode 36 has success rate: 0.00, collision rate: 0.00, collisionobs rate: 0.00, nav time: 500.00, total reward: -0.0477,average return: -0.0005, SPL: 0.0000
+2023-06-13 01:37:47, INFO: Average loss : 1.335928, 6168.645111
+2023-06-13 01:41:12, INFO: TRAIN in episode 37 has success rate: 0.00, collision rate: 0.00, collisionobs rate: 0.00, nav time: 500.00, total reward: 0.0000,average return: 0.0000, SPL: 0.0000
+2023-06-13 01:41:41, INFO: Average loss : 2.013352, 6224.217224
+2023-06-13 01:42:07, INFO: TRAIN in episode 38 has success rate: 0.00, collision rate: 0.00, collisionobs rate: 1.00, nav time: 500.00, total reward: -1.1220,average return: -0.3806, SPL: 0.0000
+2023-06-13 01:42:36, INFO: Average loss : 1.533019, 5813.155762
+2023-06-13 01:43:55, INFO: TRAIN in episode 39 has success rate: 0.00, collision rate: 1.00, collisionobs rate: 0.00, nav time: 500.00, total reward: -0.1077,average return: -0.2224, SPL: 0.0000
+2023-06-13 01:44:24, INFO: Average loss : 1.377015, 5518.683990
+2023-06-13 01:46:18, INFO: TRAIN in episode 40 has success rate: 0.00, collision rate: 0.50, collisionobs rate: 0.00, nav time: 500.00, total reward: -0.2868,average return: -0.2277, SPL: 0.0000
+2023-06-13 01:46:47, INFO: Average loss : 1.205846, 6390.525513
+2023-06-13 01:48:14, INFO: TRAIN in episode 41 has success rate: 0.00, collision rate: 0.50, collisionobs rate: 0.50, nav time: 500.00, total reward: -0.1251,average return: -0.1625, SPL: 0.0000
+2023-06-13 01:48:43, INFO: Average loss : 1.565110, 6817.294464
+2023-06-13 01:50:27, INFO: TRAIN in episode 42 has success rate: 0.00, collision rate: 0.50, collisionobs rate: 0.00, nav time: 500.00, total reward: -0.2243,average return: -0.2483, SPL: 0.0000
+2023-06-13 01:50:56, INFO: Average loss : 1.038338, 6778.271362
+2023-06-13 01:52:40, INFO: TRAIN in episode 43 has success rate: 0.00, collision rate: 0.00, collisionobs rate: 0.50, nav time: 500.00, total reward: -0.7105,average return: -0.4178, SPL: 0.0000
+2023-06-13 01:53:09, INFO: Average loss : 0.931090, 6509.976959
+2023-06-13 01:53:54, INFO: TRAIN in episode 44 has success rate: 0.00, collision rate: 0.50, collisionobs rate: 0.50, nav time: 500.00, total reward: -0.3657,average return: 0.0730, SPL: 0.0000
+2023-06-13 01:54:23, INFO: Average loss : 1.270199, 6686.216949
+2023-06-13 01:56:14, INFO: TRAIN in episode 45 has success rate: 0.50, collision rate: 0.00, collisionobs rate: 0.00, nav time: 35.00, total reward: -0.9772,average return: 0.2514, SPL: 0.3686
+2023-06-13 01:56:43, INFO: Average loss : 1.160423, 6594.374969
+2023-06-13 01:58:33, INFO: TRAIN in episode 46 has success rate: 0.00, collision rate: 0.50, collisionobs rate: 0.00, nav time: 500.00, total reward: -0.1381,average return: -0.1944, SPL: 0.0000
+2023-06-13 01:59:02, INFO: Average loss : 1.312350, 5737.278931
+2023-06-13 02:00:46, INFO: TRAIN in episode 47 has success rate: 0.00, collision rate: 0.00, collisionobs rate: 0.50, nav time: 500.00, total reward: -0.2784,average return: -0.1612, SPL: 0.0000
+2023-06-13 02:01:15, INFO: Average loss : 2.155985, 6273.200867
+2023-06-13 02:01:52, INFO: TRAIN in episode 48 has success rate: 0.00, collision rate: 1.00, collisionobs rate: 0.00, nav time: 500.00, total reward: -0.2187,average return: -0.3193, SPL: 0.0000
+2023-06-13 02:02:21, INFO: Average loss : 1.409612, 6051.131500
+2023-06-13 02:04:13, INFO: TRAIN in episode 49 has success rate: 0.00, collision rate: 1.00, collisionobs rate: 0.00, nav time: 500.00, total reward: -0.0466,average return: -0.2007, SPL: 0.0000
+2023-06-13 02:04:42, INFO: Average loss : 0.932871, 6730.068359
+2023-06-13 02:05:04, INFO: TRAIN in episode 50 has success rate: 0.00, collision rate: 0.50, collisionobs rate: 0.50, nav time: 500.00, total reward: -0.2619,average return: -0.2785, SPL: 0.0000
+2023-06-13 02:05:33, INFO: Average loss : 1.667896, 6638.135315
+2023-06-13 02:08:38, INFO: TRAIN in episode 51 has success rate: 0.00, collision rate: 0.50, collisionobs rate: 0.00, nav time: 500.00, total reward: -0.0008,average return: -0.0545, SPL: 0.0000
+2023-06-13 02:09:07, INFO: Average loss : 0.848802, 6674.354950
+2023-06-13 02:11:35, INFO: TRAIN in episode 52 has success rate: 0.00, collision rate: 0.50, collisionobs rate: 0.00, nav time: 500.00, total reward: -0.0049,average return: -0.0774, SPL: 0.0000
+2023-06-13 02:12:04, INFO: Average loss : 0.812858, 5920.829254
+2023-06-13 02:14:16, INFO: TRAIN in episode 53 has success rate: 0.00, collision rate: 0.50, collisionobs rate: 0.00, nav time: 500.00, total reward: -0.0398,average return: -0.1257, SPL: 0.0000
+2023-06-13 02:14:45, INFO: Average loss : 1.232428, 5120.236206
+2023-06-13 02:17:09, INFO: TRAIN in episode 54 has success rate: 0.00, collision rate: 0.50, collisionobs rate: 0.00, nav time: 500.00, total reward: -0.0063,average return: -0.0692, SPL: 0.0000
+2023-06-13 02:17:38, INFO: Average loss : 0.504020, 5120.579559
+2023-06-13 02:21:09, INFO: TRAIN in episode 55 has success rate: 0.00, collision rate: 0.00, collisionobs rate: 0.00, nav time: 500.00, total reward: -0.0823,average return: -0.0008, SPL: 0.0000
+2023-06-13 02:21:38, INFO: Average loss : 0.920625, 5432.496460
+2023-06-13 02:24:48, INFO: TRAIN in episode 56 has success rate: 0.00, collision rate: 0.50, collisionobs rate: 0.00, nav time: 500.00, total reward: -0.0001,average return: -0.0433, SPL: 0.0000
+2023-06-13 02:25:17, INFO: Average loss : 0.949357, 5495.179840
+2023-06-13 02:25:40, INFO: TRAIN in episode 57 has success rate: 0.00, collision rate: 1.00, collisionobs rate: 0.00, nav time: 500.00, total reward: -0.2541,average return: -0.3877, SPL: 0.0000
+2023-06-13 02:26:09, INFO: Average loss : 0.996593, 5144.471985
+2023-06-13 02:27:57, INFO: TRAIN in episode 58 has success rate: 0.00, collision rate: 1.00, collisionobs rate: 0.00, nav time: 500.00, total reward: -0.2761,average return: -0.2934, SPL: 0.0000
+2023-06-13 02:28:26, INFO: Average loss : 0.732421, 4366.254974
+2023-06-13 02:29:38, INFO: TRAIN in episode 59 has success rate: 0.00, collision rate: 1.00, collisionobs rate: 0.00, nav time: 500.00, total reward: -0.0892,average return: -0.2471, SPL: 0.0000
+2023-06-13 02:30:07, INFO: Average loss : 0.474530, 5002.113617
+2023-06-13 02:30:22, INFO: TRAIN in episode 60 has success rate: 0.00, collision rate: 1.00, collisionobs rate: 0.00, nav time: 500.00, total reward: -0.4059,average return: -0.4620, SPL: 0.0000
+2023-06-13 02:30:51, INFO: Average loss : 1.048886, 4599.508942
+2023-06-13 02:32:48, INFO: TRAIN in episode 61 has success rate: 0.00, collision rate: 0.00, collisionobs rate: 0.50, nav time: 500.00, total reward: -1.6525,average return: -0.6000, SPL: 0.0000
+2023-06-13 02:33:17, INFO: Average loss : 0.745521, 4992.979767
+2023-06-13 02:33:38, INFO: TRAIN in episode 62 has success rate: 0.00, collision rate: 1.00, collisionobs rate: 0.00, nav time: 500.00, total reward: -0.2489,average return: -0.3621, SPL: 0.0000
+2023-06-13 02:34:07, INFO: Average loss : 0.697640, 5141.125427
+2023-06-13 02:35:49, INFO: TRAIN in episode 63 has success rate: 0.00, collision rate: 0.00, collisionobs rate: 0.50, nav time: 500.00, total reward: -0.1250,average return: -0.1250, SPL: 0.0000
+2023-06-13 02:36:18, INFO: Average loss : 0.794637, 5197.244965
+2023-06-13 02:39:41, INFO: TRAIN in episode 64 has success rate: 0.00, collision rate: 0.00, collisionobs rate: 0.00, nav time: 500.00, total reward: 0.0000,average return: 0.0000, SPL: 0.0000
+2023-06-13 02:40:10, INFO: Average loss : 0.427539, 4849.288788
+2023-06-13 02:43:07, INFO: TRAIN in episode 65 has success rate: 0.00, collision rate: 1.00, collisionobs rate: 0.00, nav time: 500.00, total reward: -0.0054,average return: -0.1032, SPL: 0.0000
+2023-06-13 02:43:36, INFO: Average loss : 0.588560, 5003.095612
+2023-06-13 02:46:23, INFO: TRAIN in episode 66 has success rate: 0.00, collision rate: 0.50, collisionobs rate: 0.00, nav time: 500.00, total reward: 0.0029,average return: -0.0544, SPL: 0.0000
+2023-06-13 02:46:52, INFO: Average loss : 0.695092, 4083.306122
+2023-06-13 02:48:49, INFO: TRAIN in episode 67 has success rate: 0.00, collision rate: 0.50, collisionobs rate: 0.00, nav time: 500.00, total reward: -0.0678,average return: -0.1485, SPL: 0.0000
+2023-06-13 02:49:18, INFO: Average loss : 1.300808, 4499.113159
+2023-06-13 02:51:01, INFO: TRAIN in episode 68 has success rate: 0.00, collision rate: 0.00, collisionobs rate: 0.50, nav time: 500.00, total reward: -0.0763,average return: -0.2023, SPL: 0.0000
+2023-06-13 02:51:29, INFO: Average loss : 0.490417, 4072.746399
+2023-06-13 02:54:51, INFO: TRAIN in episode 69 has success rate: 0.00, collision rate: 0.00, collisionobs rate: 0.00, nav time: 500.00, total reward: -0.0239,average return: -0.0091, SPL: 0.0000
+2023-06-13 02:55:20, INFO: Average loss : 0.778180, 4469.697754
+2023-06-13 02:58:54, INFO: TRAIN in episode 70 has success rate: 0.00, collision rate: 0.00, collisionobs rate: 0.00, nav time: 500.00, total reward: 0.0000,average return: 0.0000, SPL: 0.0000
+2023-06-13 02:59:23, INFO: Average loss : 0.353729, 4048.617310
+2023-06-13 03:01:14, INFO: TRAIN in episode 71 has success rate: 0.00, collision rate: 0.50, collisionobs rate: 0.00, nav time: 500.00, total reward: -0.1527,average return: -0.2065, SPL: 0.0000
+2023-06-13 03:01:43, INFO: Average loss : 0.313256, 3685.418976
+2023-06-13 03:02:38, INFO: TRAIN in episode 72 has success rate: 0.00, collision rate: 1.00, collisionobs rate: 0.00, nav time: 500.00, total reward: -0.0898,average return: -0.2294, SPL: 0.0000
+2023-06-13 03:03:07, INFO: Average loss : 0.380136, 4570.764465
+2023-06-13 03:05:03, INFO: TRAIN in episode 73 has success rate: 0.00, collision rate: 0.50, collisionobs rate: 0.00, nav time: 500.00, total reward: -0.0854,average return: -0.1652, SPL: 0.0000
+2023-06-13 03:05:32, INFO: Average loss : 0.584148, 4682.873230
+2023-06-13 03:07:18, INFO: TRAIN in episode 74 has success rate: 0.00, collision rate: 0.50, collisionobs rate: 0.00, nav time: 500.00, total reward: -0.2062,average return: -0.2415, SPL: 0.0000
+2023-06-13 03:07:46, INFO: Average loss : 0.470009, 4400.823624
+2023-06-13 03:09:19, INFO: TRAIN in episode 75 has success rate: 0.00, collision rate: 1.00, collisionobs rate: 0.00, nav time: 500.00, total reward: -0.0033,average return: -0.1872, SPL: 0.0000
+2023-06-13 03:09:47, INFO: Average loss : 0.424416, 5726.838348
+2023-06-13 03:13:08, INFO: TRAIN in episode 76 has success rate: 0.00, collision rate: 0.00, collisionobs rate: 0.00, nav time: 500.00, total reward: -0.0020,average return: -0.0000, SPL: 0.0000
+2023-06-13 03:13:37, INFO: Average loss : 0.578188, 4660.286957
+2023-06-13 03:15:39, INFO: TRAIN in episode 77 has success rate: 0.00, collision rate: 1.00, collisionobs rate: 0.00, nav time: 500.00, total reward: -0.0021,average return: -0.1002, SPL: 0.0000
+2023-06-13 03:16:08, INFO: Average loss : 0.484917, 4691.929321
+2023-06-13 03:16:42, INFO: TRAIN in episode 78 has success rate: 0.00, collision rate: 0.50, collisionobs rate: 0.50, nav time: 500.00, total reward: -0.4792,average return: 0.1228, SPL: 0.0000
+2023-06-13 03:17:11, INFO: Average loss : 0.674690, 5522.059723
+2023-06-13 03:20:35, INFO: TRAIN in episode 79 has success rate: 0.00, collision rate: 0.50, collisionobs rate: 0.00, nav time: 500.00, total reward: -0.0258,average return: -0.0316, SPL: 0.0000
+2023-06-13 03:21:04, INFO: Average loss : 0.444453, 5212.139709
+2023-06-13 03:22:17, INFO: TRAIN in episode 80 has success rate: 0.00, collision rate: 1.00, collisionobs rate: 0.00, nav time: 500.00, total reward: -0.2102,average return: -0.2835, SPL: 0.0000
+2023-06-13 03:22:46, INFO: Average loss : 0.333599, 4758.474884
+2023-06-13 03:24:34, INFO: TRAIN in episode 81 has success rate: 0.00, collision rate: 0.50, collisionobs rate: 0.00, nav time: 500.00, total reward: -0.1897,average return: -0.2065, SPL: 0.0000
+2023-06-13 03:25:03, INFO: Average loss : 0.291698, 4676.653503
+2023-06-13 03:25:12, INFO: TRAIN in episode 82 has success rate: 0.00, collision rate: 1.00, collisionobs rate: 0.00, nav time: 500.00, total reward: -0.3868,average return: -0.4387, SPL: 0.0000
+2023-06-13 03:25:41, INFO: Average loss : 0.861932, 5271.424835
+2023-06-13 03:26:19, INFO: TRAIN in episode 83 has success rate: 0.00, collision rate: 1.00, collisionobs rate: 0.00, nav time: 500.00, total reward: -0.2552,average return: -0.3336, SPL: 0.0000
+2023-06-13 03:26:48, INFO: Average loss : 0.372215, 4903.237946
+2023-06-13 03:28:22, INFO: TRAIN in episode 84 has success rate: 0.00, collision rate: 1.00, collisionobs rate: 0.00, nav time: 500.00, total reward: -0.2407,average return: -0.2883, SPL: 0.0000
+2023-06-13 03:28:50, INFO: Average loss : 0.193709, 4528.518341
+2023-06-13 03:30:57, INFO: TRAIN in episode 85 has success rate: 0.00, collision rate: 1.00, collisionobs rate: 0.00, nav time: 500.00, total reward: -0.0182,average return: -0.1278, SPL: 0.0000
+2023-06-13 03:31:26, INFO: Average loss : 1.136256, 4177.065765
+2023-06-13 03:33:09, INFO: TRAIN in episode 86 has success rate: 0.00, collision rate: 1.00, collisionobs rate: 0.00, nav time: 500.00, total reward: -0.2189,average return: -0.3215, SPL: 0.0000
+2023-06-13 03:33:38, INFO: Average loss : 0.526440, 4403.187653
+2023-06-13 03:33:47, INFO: TRAIN in episode 87 has success rate: 0.00, collision rate: 1.00, collisionobs rate: 0.00, nav time: 500.00, total reward: -0.4701,average return: -0.4939, SPL: 0.0000
+2023-06-13 03:34:15, INFO: Average loss : 0.563152, 6076.684662
+2023-06-13 03:35:48, INFO: TRAIN in episode 88 has success rate: 0.00, collision rate: 1.00, collisionobs rate: 0.00, nav time: 500.00, total reward: -0.0734,average return: -0.2088, SPL: 0.0000
+2023-06-13 03:36:16, INFO: Average loss : 0.377373, 4611.147034
+2023-06-13 03:38:24, INFO: TRAIN in episode 89 has success rate: 0.00, collision rate: 0.50, collisionobs rate: 0.00, nav time: 500.00, total reward: -0.0363,average return: -0.1246, SPL: 0.0000
+2023-06-13 03:38:52, INFO: Average loss : 0.677779, 4504.579620
+2023-06-13 03:39:12, INFO: TRAIN in episode 90 has success rate: 0.00, collision rate: 1.00, collisionobs rate: 0.00, nav time: 500.00, total reward: -0.3065,average return: -0.4130, SPL: 0.0000
+2023-06-13 03:39:41, INFO: Average loss : 0.924800, 4602.718994
+2023-06-13 03:42:30, INFO: TRAIN in episode 91 has success rate: 0.00, collision rate: 0.50, collisionobs rate: 0.00, nav time: 500.00, total reward: -0.0018,average return: -0.0753, SPL: 0.0000
+2023-06-13 03:42:58, INFO: Average loss : 0.310518, 4558.421265
+2023-06-13 03:46:19, INFO: TRAIN in episode 92 has success rate: 0.00, collision rate: 0.00, collisionobs rate: 0.00, nav time: 500.00, total reward: -0.0090,average return: -0.0145, SPL: 0.0000
+2023-06-13 03:46:48, INFO: Average loss : 0.437973, 4332.158295
+2023-06-13 03:48:30, INFO: TRAIN in episode 93 has success rate: 0.00, collision rate: 1.00, collisionobs rate: 0.00, nav time: 500.00, total reward: -0.1352,average return: -0.4027, SPL: 0.0000
+2023-06-13 03:48:59, INFO: Average loss : 0.612773, 4085.728943
+2023-06-13 03:52:24, INFO: TRAIN in episode 94 has success rate: 0.00, collision rate: 0.00, collisionobs rate: 0.00, nav time: 500.00, total reward: 0.0000,average return: 0.0000, SPL: 0.0000
+2023-06-13 03:52:53, INFO: Average loss : 0.392770, 4275.058716
+2023-06-13 03:56:22, INFO: TRAIN in episode 95 has success rate: 0.00, collision rate: 0.00, collisionobs rate: 0.00, nav time: 500.00, total reward: -0.0027,average return: -0.0109, SPL: 0.0000
+2023-06-13 03:56:51, INFO: Average loss : 0.443838, 4260.044983
+2023-06-13 04:00:13, INFO: TRAIN in episode 96 has success rate: 0.00, collision rate: 0.00, collisionobs rate: 0.00, nav time: 500.00, total reward: 0.0000,average return: 0.0000, SPL: 0.0000
+2023-06-13 04:00:42, INFO: Average loss : 0.391446, 5082.316406
+2023-06-13 04:01:26, INFO: TRAIN in episode 97 has success rate: 0.00, collision rate: 0.00, collisionobs rate: 0.50, nav time: 500.00, total reward: -0.3127,average return: -0.1330, SPL: 0.0000
+2023-06-13 04:01:55, INFO: Average loss : 0.226812, 4033.427338
+2023-06-13 04:03:02, INFO: TRAIN in episode 98 has success rate: 0.00, collision rate: 1.00, collisionobs rate: 0.00, nav time: 500.00, total reward: -0.0962,average return: -0.3120, SPL: 0.0000
+2023-06-13 04:03:31, INFO: Average loss : 0.590499, 5085.323669
+2023-06-13 04:06:05, INFO: TRAIN in episode 99 has success rate: 0.00, collision rate: 0.50, collisionobs rate: 0.00, nav time: 500.00, total reward: -0.0126,average return: -0.1834, SPL: 0.0000
+2023-06-13 04:06:33, INFO: Average loss : 0.571484, 4224.985107
+2023-06-13 04:07:44, INFO: TRAIN in episode 100 has success rate: 0.00, collision rate: 1.00, collisionobs rate: 0.00, nav time: 500.00, total reward: -0.0342,average return: -0.1833, SPL: 0.0000
+2023-06-13 04:08:13, INFO: Average loss : 0.249132, 3663.897736
+2023-06-13 04:10:03, INFO: TRAIN in episode 101 has success rate: 0.00, collision rate: 0.50, collisionobs rate: 0.00, nav time: 500.00, total reward: -0.4729,average return: -0.1988, SPL: 0.0000
+2023-06-13 04:10:32, INFO: Average loss : 0.293772, 4712.086700
+2023-06-13 04:12:39, INFO: TRAIN in episode 102 has success rate: 0.00, collision rate: 0.50, collisionobs rate: 0.00, nav time: 500.00, total reward: -0.0597,average return: -0.1018, SPL: 0.0000
+2023-06-13 04:13:08, INFO: Average loss : 0.296268, 3785.133636
+2023-06-13 04:14:52, INFO: TRAIN in episode 103 has success rate: 0.00, collision rate: 1.00, collisionobs rate: 0.00, nav time: 500.00, total reward: -0.0792,average return: -0.1679, SPL: 0.0000
+2023-06-13 04:15:21, INFO: Average loss : 0.456060, 4620.183899
+2023-06-13 04:16:09, INFO: TRAIN in episode 104 has success rate: 0.00, collision rate: 0.50, collisionobs rate: 0.50, nav time: 500.00, total reward: -0.5207,average return: -0.3439, SPL: 0.0000
+2023-06-13 04:16:37, INFO: Average loss : 0.282919, 4978.041046
+2023-06-13 04:17:08, INFO: TRAIN in episode 105 has success rate: 0.00, collision rate: 0.50, collisionobs rate: 0.50, nav time: 500.00, total reward: -0.7400,average return: -0.8527, SPL: 0.0000
+2023-06-13 04:17:37, INFO: Average loss : 0.494718, 4817.154877
+2023-06-13 04:20:42, INFO: TRAIN in episode 106 has success rate: 0.00, collision rate: 0.50, collisionobs rate: 0.00, nav time: 500.00, total reward: -0.7063,average return: -0.0475, SPL: 0.0000
+2023-06-13 04:21:11, INFO: Average loss : 0.447930, 4363.914413
+2023-06-13 04:22:58, INFO: TRAIN in episode 107 has success rate: 0.00, collision rate: 0.00, collisionobs rate: 0.50, nav time: 500.00, total reward: -0.7626,average return: -0.6920, SPL: 0.0000
+2023-06-13 04:23:26, INFO: Average loss : 0.656015, 4217.381805
+2023-06-13 04:25:09, INFO: TRAIN in episode 108 has success rate: 0.00, collision rate: 0.00, collisionobs rate: 0.50, nav time: 500.00, total reward: -0.0601,average return: -0.0926, SPL: 0.0000
+2023-06-13 04:25:38, INFO: Average loss : 0.521051, 4588.079498
+2023-06-13 04:29:04, INFO: TRAIN in episode 109 has success rate: 0.00, collision rate: 0.00, collisionobs rate: 0.00, nav time: 500.00, total reward: 0.0026,average return: 0.0021, SPL: 0.0000
+2023-06-13 04:29:33, INFO: Average loss : 0.266333, 4200.889191
+2023-06-13 04:31:16, INFO: TRAIN in episode 110 has success rate: 0.00, collision rate: 0.50, collisionobs rate: 0.00, nav time: 500.00, total reward: -0.2873,average return: -0.2483, SPL: 0.0000
+2023-06-13 04:31:45, INFO: Average loss : 0.293393, 3686.553879
+2023-06-13 04:31:52, INFO: TRAIN in episode 111 has success rate: 0.00, collision rate: 0.50, collisionobs rate: 0.50, nav time: 500.00, total reward: -1.1585,average return: -0.7582, SPL: 0.0000
+2023-06-13 04:32:21, INFO: Average loss : 0.565468, 3795.010712
+2023-06-13 04:33:15, INFO: TRAIN in episode 112 has success rate: 0.00, collision rate: 0.50, collisionobs rate: 0.50, nav time: 500.00, total reward: -0.1307,average return: -0.3352, SPL: 0.0000
+2023-06-13 04:33:44, INFO: Average loss : 0.211084, 4315.763092
+2023-06-13 04:33:52, INFO: TRAIN in episode 113 has success rate: 0.00, collision rate: 0.50, collisionobs rate: 0.50, nav time: 500.00, total reward: -0.2750,average return: -0.3351, SPL: 0.0000
+2023-06-13 04:34:21, INFO: Average loss : 0.373691, 4322.392883
+2023-06-13 04:34:43, INFO: TRAIN in episode 114 has success rate: 0.00, collision rate: 0.50, collisionobs rate: 0.50, nav time: 500.00, total reward: -0.1899,average return: -0.3126, SPL: 0.0000
+2023-06-13 04:35:12, INFO: Average loss : 0.144062, 4309.049408
+2023-06-13 04:39:19, INFO: TRAIN in episode 115 has success rate: 0.00, collision rate: 0.00, collisionobs rate: 0.00, nav time: 500.00, total reward: -0.0022,average return: -0.0103, SPL: 0.0000
+2023-06-13 04:39:48, INFO: Average loss : 0.339084, 3641.295959
+2023-06-13 04:43:09, INFO: TRAIN in episode 116 has success rate: 0.00, collision rate: 0.00, collisionobs rate: 0.00, nav time: 500.00, total reward: -0.0552,average return: -0.0005, SPL: 0.0000
+2023-06-13 04:43:38, INFO: Average loss : 0.251354, 4301.289001
+2023-06-13 04:47:02, INFO: TRAIN in episode 117 has success rate: 0.00, collision rate: 0.00, collisionobs rate: 0.00, nav time: 500.00, total reward: 0.0032,average return: 0.0000, SPL: 0.0000
+2023-06-13 04:47:30, INFO: Average loss : 0.436631, 3656.741760
+2023-06-13 04:50:53, INFO: TRAIN in episode 118 has success rate: 0.00, collision rate: 0.00, collisionobs rate: 0.00, nav time: 500.00, total reward: 0.0216,average return: 0.0006, SPL: 0.0000
+2023-06-13 04:51:21, INFO: Average loss : 0.613671, 4436.632904
+2023-06-13 04:54:44, INFO: TRAIN in episode 119 has success rate: 0.00, collision rate: 0.00, collisionobs rate: 0.00, nav time: 500.00, total reward: 0.0000,average return: 0.0000, SPL: 0.0000
+2023-06-13 04:55:13, INFO: Average loss : 0.242695, 3365.921906
+2023-06-13 04:58:51, INFO: TRAIN in episode 120 has success rate: 0.00, collision rate: 0.50, collisionobs rate: 0.00, nav time: 500.00, total reward: -0.0000,average return: -0.0324, SPL: 0.0000
+2023-06-13 04:59:19, INFO: Average loss : 0.310186, 4464.708435
+2023-06-13 05:02:42, INFO: TRAIN in episode 121 has success rate: 0.00, collision rate: 0.00, collisionobs rate: 0.00, nav time: 500.00, total reward: 0.0000,average return: 0.0000, SPL: 0.0000
+2023-06-13 05:03:11, INFO: Average loss : 0.426882, 4870.859985
+2023-06-13 05:04:25, INFO: TRAIN in episode 122 has success rate: 0.00, collision rate: 1.00, collisionobs rate: 0.00, nav time: 500.00, total reward: -0.0254,average return: -0.1665, SPL: 0.0000
+2023-06-13 05:04:54, INFO: Average loss : 0.525364, 3973.083862
+2023-06-13 05:06:39, INFO: TRAIN in episode 123 has success rate: 0.00, collision rate: 0.00, collisionobs rate: 0.50, nav time: 500.00, total reward: -1.5822,average return: -0.4806, SPL: 0.0000
+2023-06-13 05:07:08, INFO: Average loss : 0.592399, 4049.830200
+2023-06-13 05:10:18, INFO: TRAIN in episode 124 has success rate: 0.00, collision rate: 0.50, collisionobs rate: 0.00, nav time: 500.00, total reward: -0.0003,average return: -0.0392, SPL: 0.0000
+2023-06-13 05:10:47, INFO: Average loss : 0.387709, 4547.881714
+2023-06-13 05:11:24, INFO: TRAIN in episode 125 has success rate: 0.00, collision rate: 0.50, collisionobs rate: 0.50, nav time: 500.00, total reward: -0.1631,average return: -0.2412, SPL: 0.0000
+2023-06-13 05:11:53, INFO: Average loss : 0.332794, 4343.661804
+2023-06-13 05:14:50, INFO: TRAIN in episode 126 has success rate: 0.00, collision rate: 0.50, collisionobs rate: 0.00, nav time: 500.00, total reward: -0.0723,average return: -0.0451, SPL: 0.0000
+2023-06-13 05:15:18, INFO: Average loss : 0.456736, 4896.497803
+2023-06-13 05:16:02, INFO: TRAIN in episode 127 has success rate: 0.00, collision rate: 1.00, collisionobs rate: 0.00, nav time: 500.00, total reward: -0.1488,average return: -0.2705, SPL: 0.0000
+2023-06-13 05:16:31, INFO: Average loss : 0.398656, 4439.246490
+2023-06-13 05:18:17, INFO: TRAIN in episode 128 has success rate: 0.00, collision rate: 0.50, collisionobs rate: 0.00, nav time: 500.00, total reward: -0.1849,average return: -0.2164, SPL: 0.0000
+2023-06-13 05:18:45, INFO: Average loss : 0.233759, 4563.109039
+2023-06-13 05:21:37, INFO: TRAIN in episode 129 has success rate: 0.00, collision rate: 0.50, collisionobs rate: 0.00, nav time: 500.00, total reward: -0.0005,average return: -0.0447, SPL: 0.0000
+2023-06-13 05:22:05, INFO: Average loss : 0.180122, 4293.277679
+2023-06-13 05:23:41, INFO: TRAIN in episode 130 has success rate: 0.00, collision rate: 1.00, collisionobs rate: 0.00, nav time: 500.00, total reward: -0.0742,average return: -0.2103, SPL: 0.0000
+2023-06-13 05:24:10, INFO: Average loss : 0.206531, 4120.011871
+2023-06-13 05:27:13, INFO: TRAIN in episode 131 has success rate: 0.00, collision rate: 1.00, collisionobs rate: 0.00, nav time: 500.00, total reward: -1.0013,average return: -0.0857, SPL: 0.0000
+2023-06-13 05:27:42, INFO: Average loss : 0.044752, 3990.224030
+2023-06-13 05:29:02, INFO: TRAIN in episode 132 has success rate: 0.00, collision rate: 1.00, collisionobs rate: 0.00, nav time: 500.00, total reward: -0.1618,average return: -0.2383, SPL: 0.0000
+2023-06-13 05:29:31, INFO: Average loss : 0.112315, 4044.865417
+2023-06-13 05:31:04, INFO: TRAIN in episode 133 has success rate: 0.00, collision rate: 1.00, collisionobs rate: 0.00, nav time: 500.00, total reward: -0.0218,average return: -0.1359, SPL: 0.0000
+2023-06-13 05:31:33, INFO: Average loss : 0.553591, 3777.247009
+2023-06-13 05:34:35, INFO: TRAIN in episode 134 has success rate: 0.00, collision rate: 0.50, collisionobs rate: 0.00, nav time: 500.00, total reward: -0.0177,average return: -0.0656, SPL: 0.0000
+2023-06-13 05:35:04, INFO: Average loss : 0.427561, 3543.481552
+2023-06-13 05:37:01, INFO: TRAIN in episode 135 has success rate: 0.00, collision rate: 0.50, collisionobs rate: 0.00, nav time: 500.00, total reward: -0.1207,average return: -0.2191, SPL: 0.0000
+2023-06-13 05:37:30, INFO: Average loss : 0.600663, 4668.854370
+2023-06-13 05:39:30, INFO: TRAIN in episode 136 has success rate: 0.00, collision rate: 0.50, collisionobs rate: 0.00, nav time: 500.00, total reward: -0.0616,average return: -0.1435, SPL: 0.0000
+2023-06-13 05:39:59, INFO: Average loss : 0.265105, 4462.320709
+2023-06-13 05:43:24, INFO: TRAIN in episode 137 has success rate: 0.00, collision rate: 0.00, collisionobs rate: 0.00, nav time: 500.00, total reward: -0.0190,average return: -0.0101, SPL: 0.0000
+2023-06-13 05:43:53, INFO: Average loss : 0.284961, 4019.647873
+2023-06-13 05:46:47, INFO: TRAIN in episode 138 has success rate: 0.00, collision rate: 0.50, collisionobs rate: 0.00, nav time: 500.00, total reward: -0.0038,average return: -0.0614, SPL: 0.0000
+2023-06-13 05:47:16, INFO: Average loss : 0.357552, 3991.996109
+2023-06-13 05:49:28, INFO: TRAIN in episode 139 has success rate: 0.00, collision rate: 0.50, collisionobs rate: 0.00, nav time: 500.00, total reward: -0.1648,average return: -0.1303, SPL: 0.0000
+2023-06-13 05:49:56, INFO: Average loss : 0.557837, 3789.369583
+2023-06-13 05:50:44, INFO: TRAIN in episode 140 has success rate: 0.00, collision rate: 0.50, collisionobs rate: 0.00, nav time: 500.00, total reward: -0.4365,average return: -0.2138, SPL: 0.0000
+2023-06-13 05:51:13, INFO: Average loss : 0.415664, 4070.036407
+2023-06-13 05:54:33, INFO: TRAIN in episode 141 has success rate: 0.00, collision rate: 0.50, collisionobs rate: 0.00, nav time: 500.00, total reward: -0.0000,average return: -0.0325, SPL: 0.0000
+2023-06-13 05:55:02, INFO: Average loss : 0.113803, 4770.324005
+2023-06-13 05:56:15, INFO: TRAIN in episode 142 has success rate: 0.00, collision rate: 1.00, collisionobs rate: 0.00, nav time: 500.00, total reward: -0.2400,average return: -0.2935, SPL: 0.0000
+2023-06-13 05:56:44, INFO: Average loss : 0.473400, 4006.808441
+2023-06-13 05:58:28, INFO: TRAIN in episode 143 has success rate: 0.00, collision rate: 0.50, collisionobs rate: 0.00, nav time: 500.00, total reward: -0.2348,average return: -0.2481, SPL: 0.0000
+2023-06-13 05:58:57, INFO: Average loss : 0.516690, 3654.791931
+2023-06-13 05:59:25, INFO: TRAIN in episode 144 has success rate: 0.00, collision rate: 1.00, collisionobs rate: 0.00, nav time: 500.00, total reward: -0.2516,average return: -0.3463, SPL: 0.0000
+2023-06-13 05:59:54, INFO: Average loss : 0.220316, 3978.718597
+2023-06-13 06:01:59, INFO: TRAIN in episode 145 has success rate: 0.00, collision rate: 0.50, collisionobs rate: 0.00, nav time: 500.00, total reward: -0.0510,average return: -0.1414, SPL: 0.0000
+2023-06-13 06:02:28, INFO: Average loss : 0.247208, 3630.055420
+2023-06-13 06:04:26, INFO: TRAIN in episode 146 has success rate: 0.00, collision rate: 1.00, collisionobs rate: 0.00, nav time: 500.00, total reward: -0.0261,average return: -0.1324, SPL: 0.0000
+2023-06-13 06:04:55, INFO: Average loss : 0.186377, 4288.149567
+2023-06-13 06:06:58, INFO: TRAIN in episode 147 has success rate: 0.00, collision rate: 1.00, collisionobs rate: 0.00, nav time: 500.00, total reward: -0.0404,average return: -0.1523, SPL: 0.0000
+2023-06-13 06:07:26, INFO: Average loss : 0.334334, 4093.198761
+2023-06-13 06:09:24, INFO: TRAIN in episode 148 has success rate: 0.00, collision rate: 1.00, collisionobs rate: 0.00, nav time: 500.00, total reward: -0.0515,average return: -0.1451, SPL: 0.0000
+2023-06-13 06:09:52, INFO: Average loss : 0.011676, 4213.657745
+2023-06-13 06:11:53, INFO: TRAIN in episode 149 has success rate: 0.00, collision rate: 0.50, collisionobs rate: 0.00, nav time: 500.00, total reward: -0.0837,average return: -0.1190, SPL: 0.0000
+2023-06-13 06:12:22, INFO: Average loss : 0.839787, 4463.618744
+2023-06-13 06:14:18, INFO: TRAIN in episode 150 has success rate: 0.00, collision rate: 0.50, collisionobs rate: 0.00, nav time: 500.00, total reward: -0.0810,average return: -0.1572, SPL: 0.0000
+2023-06-13 06:14:46, INFO: Average loss : 0.606494, 4106.697571
+2023-06-13 06:17:42, INFO: TRAIN in episode 151 has success rate: 0.00, collision rate: 0.50, collisionobs rate: 0.00, nav time: 500.00, total reward: -0.0003,average return: -0.0393, SPL: 0.0000
+2023-06-13 06:18:10, INFO: Average loss : 0.259957, 3918.812927
+2023-06-13 06:20:08, INFO: TRAIN in episode 152 has success rate: 0.00, collision rate: 0.50, collisionobs rate: 0.00, nav time: 500.00, total reward: -0.0709,average return: -0.1563, SPL: 0.0000
+2023-06-13 06:20:37, INFO: Average loss : 0.744491, 3994.189423
+2023-06-13 06:23:59, INFO: TRAIN in episode 153 has success rate: 0.00, collision rate: 0.00, collisionobs rate: 0.00, nav time: 500.00, total reward: 0.0000,average return: 0.0000, SPL: 0.0000
+2023-06-13 06:24:28, INFO: Average loss : 0.618849, 4170.766220
+2023-06-13 06:26:28, INFO: TRAIN in episode 154 has success rate: 0.00, collision rate: 0.50, collisionobs rate: 0.00, nav time: 500.00, total reward: -0.1231,average return: -0.1807, SPL: 0.0000
+2023-06-13 06:26:56, INFO: Average loss : 0.035026, 3395.175903
+2023-06-13 06:29:16, INFO: TRAIN in episode 155 has success rate: 0.00, collision rate: 0.50, collisionobs rate: 0.00, nav time: 500.00, total reward: -0.0418,average return: -0.1465, SPL: 0.0000
+2023-06-13 06:29:45, INFO: Average loss : 0.229769, 3847.214447
+2023-06-13 06:33:07, INFO: TRAIN in episode 156 has success rate: 0.00, collision rate: 0.00, collisionobs rate: 0.00, nav time: 500.00, total reward: -0.0000,average return: 0.0003, SPL: 0.0000
+2023-06-13 06:33:35, INFO: Average loss : 0.120513, 3393.438019
+2023-06-13 06:35:11, INFO: TRAIN in episode 157 has success rate: 0.00, collision rate: 0.50, collisionobs rate: 0.50, nav time: 500.00, total reward: -0.1222,average return: -0.1543, SPL: 0.0000
+2023-06-13 06:35:40, INFO: Average loss : 0.040488, 4104.404968
+2023-06-13 06:39:04, INFO: TRAIN in episode 158 has success rate: 0.00, collision rate: 0.00, collisionobs rate: 0.00, nav time: 500.00, total reward: 0.0000,average return: 0.0000, SPL: 0.0000
+2023-06-13 06:39:33, INFO: Average loss : 0.560425, 3442.833435
+2023-06-13 06:42:02, INFO: TRAIN in episode 159 has success rate: 0.00, collision rate: 0.00, collisionobs rate: 0.00, nav time: 500.00, total reward: -1.3447,average return: -0.1057, SPL: 0.0000
+2023-06-13 06:42:31, INFO: Average loss : 0.443096, 4154.701904
+2023-06-13 06:44:32, INFO: TRAIN in episode 160 has success rate: 0.00, collision rate: 0.50, collisionobs rate: 0.00, nav time: 500.00, total reward: -0.1617,average return: -0.2669, SPL: 0.0000
+2023-06-13 06:45:01, INFO: Average loss : 0.384007, 4066.319000
+2023-06-13 06:46:48, INFO: TRAIN in episode 161 has success rate: 0.00, collision rate: 1.00, collisionobs rate: 0.00, nav time: 500.00, total reward: -0.0776,average return: -0.1490, SPL: 0.0000
+2023-06-13 06:47:17, INFO: Average loss : 0.252109, 4499.060608
+2023-06-13 06:47:59, INFO: TRAIN in episode 162 has success rate: 0.00, collision rate: 1.00, collisionobs rate: 0.00, nav time: 500.00, total reward: -0.2720,average return: -0.3336, SPL: 0.0000
+2023-06-13 06:48:28, INFO: Average loss : 0.220523, 3924.716980
+2023-06-13 06:51:07, INFO: TRAIN in episode 163 has success rate: 0.00, collision rate: 0.50, collisionobs rate: 0.00, nav time: 500.00, total reward: -0.0092,average return: -0.0684, SPL: 0.0000
+2023-06-13 06:51:36, INFO: Average loss : 0.064443, 4004.027283
+2023-06-13 06:52:16, INFO: TRAIN in episode 164 has success rate: 0.00, collision rate: 0.50, collisionobs rate: 0.50, nav time: 500.00, total reward: -0.1961,average return: -0.4184, SPL: 0.0000
+2023-06-13 06:52:45, INFO: Average loss : 0.133142, 4513.383148
+2023-06-13 06:53:08, INFO: TRAIN in episode 165 has success rate: 0.00, collision rate: 0.50, collisionobs rate: 0.50, nav time: 500.00, total reward: -0.7205,average return: -0.7340, SPL: 0.0000
+2023-06-13 06:53:36, INFO: Average loss : 0.270602, 4636.965912
+2023-06-13 06:53:45, INFO: TRAIN in episode 166 has success rate: 0.00, collision rate: 0.50, collisionobs rate: 0.50, nav time: 500.00, total reward: -0.4186,average return: -0.2387, SPL: 0.0000
+2023-06-13 06:54:14, INFO: Average loss : 0.212482, 3756.200714
+2023-06-13 06:55:55, INFO: TRAIN in episode 167 has success rate: 0.00, collision rate: 0.50, collisionobs rate: 0.50, nav time: 500.00, total reward: -0.1251,average return: -0.1768, SPL: 0.0000
+2023-06-13 06:56:24, INFO: Average loss : 0.085467, 3505.765320
+2023-06-13 06:58:07, INFO: TRAIN in episode 168 has success rate: 0.00, collision rate: 0.00, collisionobs rate: 0.50, nav time: 500.00, total reward: -0.1149,average return: -0.1200, SPL: 0.0000
+2023-06-13 06:58:35, INFO: Average loss : 0.032612, 3782.217865
+2023-06-13 06:58:47, INFO: TRAIN in episode 169 has success rate: 0.00, collision rate: 0.50, collisionobs rate: 0.50, nav time: 500.00, total reward: -2.6418,average return: -0.9585, SPL: 0.0000
+2023-06-13 06:59:16, INFO: Average loss : 0.538525, 3669.956116
+2023-06-13 07:01:13, INFO: TRAIN in episode 170 has success rate: 0.00, collision rate: 0.00, collisionobs rate: 0.50, nav time: 500.00, total reward: -0.9898,average return: -0.2510, SPL: 0.0000
+2023-06-13 07:01:41, INFO: Average loss : 0.100689, 4402.133362
+2023-06-13 07:02:18, INFO: TRAIN in episode 171 has success rate: 0.00, collision rate: 0.50, collisionobs rate: 0.50, nav time: 500.00, total reward: -1.6423,average return: -0.9581, SPL: 0.0000
+2023-06-13 07:02:46, INFO: Average loss : 0.346797, 3903.782364
+2023-06-13 07:06:06, INFO: TRAIN in episode 172 has success rate: 0.00, collision rate: 0.50, collisionobs rate: 0.00, nav time: 500.00, total reward: 0.0009,average return: -0.0362, SPL: 0.0000
+2023-06-13 07:06:35, INFO: Average loss : 0.153568, 4169.723541
+2023-06-13 07:09:58, INFO: TRAIN in episode 173 has success rate: 0.00, collision rate: 0.00, collisionobs rate: 0.00, nav time: 500.00, total reward: 0.0000,average return: 0.0000, SPL: 0.0000
+2023-06-13 07:10:28, INFO: Average loss : 0.337671, 4131.195953
+2023-06-13 07:13:52, INFO: TRAIN in episode 174 has success rate: 0.00, collision rate: 0.00, collisionobs rate: 0.00, nav time: 500.00, total reward: 0.0000,average return: 0.0000, SPL: 0.0000
+2023-06-13 07:14:21, INFO: Average loss : 0.265656, 3767.238617
+2023-06-13 07:15:12, INFO: TRAIN in episode 175 has success rate: 0.00, collision rate: 1.00, collisionobs rate: 0.00, nav time: 500.00, total reward: -0.1311,average return: -0.2706, SPL: 0.0000
+2023-06-13 07:15:41, INFO: Average loss : 0.613686, 3809.657684
+2023-06-13 07:18:25, INFO: TRAIN in episode 176 has success rate: 0.00, collision rate: 0.50, collisionobs rate: 0.00, nav time: 500.00, total reward: -0.0637,average return: -0.0395, SPL: 0.0000
+2023-06-13 07:18:54, INFO: Average loss : 0.249442, 4305.354614
+2023-06-13 07:20:12, INFO: TRAIN in episode 177 has success rate: 0.00, collision rate: 1.00, collisionobs rate: 0.00, nav time: 500.00, total reward: -0.7731,average return: -0.2279, SPL: 0.0000
+2023-06-13 07:20:40, INFO: Average loss : 0.203353, 4511.692230
+2023-06-13 07:23:04, INFO: TRAIN in episode 178 has success rate: 0.00, collision rate: 0.50, collisionobs rate: 0.50, nav time: 500.00, total reward: -0.0355,average return: -0.0973, SPL: 0.0000
+2023-06-13 07:23:33, INFO: Average loss : 0.252753, 3829.579224
+2023-06-13 07:23:57, INFO: TRAIN in episode 179 has success rate: 0.00, collision rate: 0.00, collisionobs rate: 0.50, nav time: 500.00, total reward: -0.9823,average return: -0.2456, SPL: 0.0000
+2023-06-13 07:24:25, INFO: Average loss : 0.415682, 4219.415253
+2023-06-13 07:25:16, INFO: TRAIN in episode 180 has success rate: 0.00, collision rate: 1.00, collisionobs rate: 0.00, nav time: 500.00, total reward: -0.1658,average return: -0.3181, SPL: 0.0000
+2023-06-13 07:25:45, INFO: Average loss : 0.484507, 3842.201294
+2023-06-13 07:28:00, INFO: TRAIN in episode 181 has success rate: 0.00, collision rate: 0.50, collisionobs rate: 0.00, nav time: 500.00, total reward: -0.1810,average return: -0.1349, SPL: 0.0000
+2023-06-13 07:28:28, INFO: Average loss : 0.343420, 4800.973541
+2023-06-13 07:30:13, INFO: TRAIN in episode 182 has success rate: 0.00, collision rate: 1.00, collisionobs rate: 0.00, nav time: 500.00, total reward: -0.0346,average return: -0.1563, SPL: 0.0000
+2023-06-13 07:30:41, INFO: Average loss : 0.130387, 3642.909668
+2023-06-13 07:33:08, INFO: TRAIN in episode 183 has success rate: 0.00, collision rate: 0.50, collisionobs rate: 0.00, nav time: 500.00, total reward: -0.0116,average return: -0.1172, SPL: 0.0000
+2023-06-13 07:33:37, INFO: Average loss : 0.273893, 3925.583527
+2023-06-13 07:34:20, INFO: TRAIN in episode 184 has success rate: 0.00, collision rate: 1.00, collisionobs rate: 0.00, nav time: 500.00, total reward: -0.2834,average return: -0.3658, SPL: 0.0000
+2023-06-13 07:34:48, INFO: Average loss : 0.034875, 3699.658051
+2023-06-13 07:35:42, INFO: TRAIN in episode 185 has success rate: 0.00, collision rate: 0.50, collisionobs rate: 0.50, nav time: 500.00, total reward: -0.1663,average return: -0.2918, SPL: 0.0000
+2023-06-13 07:36:11, INFO: Average loss : 0.073419, 3477.570587
+2023-06-13 07:36:41, INFO: TRAIN in episode 186 has success rate: 0.00, collision rate: 0.50, collisionobs rate: 0.50, nav time: 500.00, total reward: -1.0595,average return: -0.6877, SPL: 0.0000
+2023-06-13 07:37:10, INFO: Average loss : 0.259402, 4470.069031
+2023-06-13 07:39:13, INFO: TRAIN in episode 187 has success rate: 0.00, collision rate: 0.00, collisionobs rate: 0.50, nav time: 500.00, total reward: -0.8577,average return: -0.1469, SPL: 0.0000
+2023-06-13 07:39:41, INFO: Average loss : 0.183124, 4187.723358
+2023-06-13 07:41:27, INFO: TRAIN in episode 188 has success rate: 0.00, collision rate: 0.00, collisionobs rate: 0.50, nav time: 500.00, total reward: -0.6744,average return: -0.3053, SPL: 0.0000
+2023-06-13 07:41:55, INFO: Average loss : 0.177300, 4304.243530
+2023-06-13 07:45:03, INFO: TRAIN in episode 189 has success rate: 0.00, collision rate: 0.50, collisionobs rate: 0.00, nav time: 500.00, total reward: -1.4342,average return: -0.0708, SPL: 0.0000
+2023-06-13 07:45:31, INFO: Average loss : 0.516199, 3963.253815
+2023-06-13 07:46:19, INFO: TRAIN in episode 190 has success rate: 0.00, collision rate: 1.00, collisionobs rate: 0.00, nav time: 500.00, total reward: -0.2301,average return: -0.3368, SPL: 0.0000
+2023-06-13 07:46:48, INFO: Average loss : 0.089990, 3676.758881
+2023-06-13 07:48:40, INFO: TRAIN in episode 191 has success rate: 0.00, collision rate: 0.50, collisionobs rate: 0.00, nav time: 500.00, total reward: -0.0983,average return: -0.1691, SPL: 0.0000
+2023-06-13 07:49:09, INFO: Average loss : 0.099172, 3449.135727
+2023-06-13 07:51:16, INFO: TRAIN in episode 192 has success rate: 0.00, collision rate: 0.50, collisionobs rate: 0.00, nav time: 500.00, total reward: -0.0701,average return: -0.1189, SPL: 0.0000
+2023-06-13 07:51:45, INFO: Average loss : 0.270892, 3565.510544
+2023-06-13 07:53:25, INFO: TRAIN in episode 193 has success rate: 0.00, collision rate: 0.50, collisionobs rate: 0.50, nav time: 500.00, total reward: -0.0601,average return: -0.1235, SPL: 0.0000
+2023-06-13 07:53:56, INFO: Average loss : 0.131634, 3431.426331
+2023-06-13 07:54:19, INFO: TRAIN in episode 194 has success rate: 0.00, collision rate: 1.00, collisionobs rate: 0.00, nav time: 500.00, total reward: -0.3751,average return: -0.4280, SPL: 0.0000
+2023-06-13 07:54:49, INFO: Average loss : 0.331337, 4550.265900
+2023-06-13 07:57:21, INFO: TRAIN in episode 195 has success rate: 0.00, collision rate: 0.00, collisionobs rate: 1.00, nav time: 500.00, total reward: -0.2252,average return: -0.3555, SPL: 0.0000
+2023-06-13 07:57:50, INFO: Average loss : 0.504042, 3384.907028
+2023-06-13 07:59:36, INFO: TRAIN in episode 196 has success rate: 0.00, collision rate: 0.00, collisionobs rate: 0.50, nav time: 500.00, total reward: -0.0488,average return: -0.0755, SPL: 0.0000
+2023-06-13 08:00:04, INFO: Average loss : 0.044603, 4378.745544
+2023-06-13 08:01:51, INFO: TRAIN in episode 197 has success rate: 0.00, collision rate: 0.00, collisionobs rate: 0.50, nav time: 500.00, total reward: -1.2475,average return: -0.7026, SPL: 0.0000
+2023-06-13 08:02:19, INFO: Average loss : 0.140087, 3631.651764
+2023-06-13 08:05:36, INFO: TRAIN in episode 198 has success rate: 0.00, collision rate: 0.50, collisionobs rate: 0.00, nav time: 500.00, total reward: -0.0001,average return: -0.0376, SPL: 0.0000
+2023-06-13 08:06:04, INFO: Average loss : 0.295133, 4217.180481
+2023-06-13 08:06:54, INFO: TRAIN in episode 199 has success rate: 0.00, collision rate: 0.50, collisionobs rate: 0.50, nav time: 500.00, total reward: -0.2086,average return: -0.2383, SPL: 0.0000
+2023-06-13 08:07:23, INFO: Average loss : 0.341056, 4044.176468
+2023-06-13 08:10:58, INFO: TRAIN in episode 200 has success rate: 0.00, collision rate: 0.00, collisionobs rate: 0.00, nav time: 500.00, total reward: -0.0659,average return: -0.0755, SPL: 0.0000
+2023-06-13 08:11:26, INFO: Average loss : 0.456283, 3971.695129
+2023-06-13 08:14:48, INFO: TRAIN in episode 201 has success rate: 0.00, collision rate: 0.00, collisionobs rate: 0.00, nav time: 500.00, total reward: 0.0000,average return: 0.0000, SPL: 0.0000
+2023-06-13 08:15:17, INFO: Average loss : 0.045962, 3965.276550
+2023-06-13 08:17:39, INFO: TRAIN in episode 202 has success rate: 0.00, collision rate: 0.50, collisionobs rate: 0.00, nav time: 500.00, total reward: -0.0068,average return: -0.0694, SPL: 0.0000
+2023-06-13 08:18:08, INFO: Average loss : 0.336090, 4237.482697
+2023-06-13 08:21:31, INFO: TRAIN in episode 203 has success rate: 0.00, collision rate: 0.00, collisionobs rate: 0.00, nav time: 500.00, total reward: 0.0000,average return: 0.0000, SPL: 0.0000
+2023-06-13 08:22:00, INFO: Average loss : 0.201757, 4143.445801
+2023-06-13 08:25:10, INFO: TRAIN in episode 204 has success rate: 0.00, collision rate: 1.00, collisionobs rate: 0.00, nav time: 500.00, total reward: -0.0001,average return: -0.0641, SPL: 0.0000
+2023-06-13 08:25:39, INFO: Average loss : 0.151937, 4578.591919
+2023-06-13 08:28:23, INFO: TRAIN in episode 205 has success rate: 0.00, collision rate: 0.50, collisionobs rate: 0.00, nav time: 500.00, total reward: -0.0018,average return: -0.0519, SPL: 0.0000
+2023-06-13 08:28:52, INFO: Average loss : 0.432526, 4558.235046
+2023-06-13 08:30:57, INFO: TRAIN in episode 206 has success rate: 0.00, collision rate: 0.50, collisionobs rate: 0.00, nav time: 500.00, total reward: -0.0432,average return: -0.1348, SPL: 0.0000
+2023-06-13 08:31:25, INFO: Average loss : 0.592355, 4200.113220
+2023-06-13 08:33:05, INFO: TRAIN in episode 207 has success rate: 0.00, collision rate: 1.00, collisionobs rate: 0.00, nav time: 500.00, total reward: -0.0539,average return: -0.1865, SPL: 0.0000
+2023-06-13 08:33:34, INFO: Average loss : 0.066744, 4743.832001
+2023-06-13 08:35:39, INFO: TRAIN in episode 208 has success rate: 0.00, collision rate: 0.50, collisionobs rate: 0.00, nav time: 500.00, total reward: -2.5815,average return: -0.1486, SPL: 0.0000
+2023-06-13 08:36:08, INFO: Average loss : 0.063169, 4344.030701
+2023-06-13 08:38:24, INFO: TRAIN in episode 209 has success rate: 0.00, collision rate: 1.00, collisionobs rate: 0.00, nav time: 500.00, total reward: -0.0042,average return: -0.0969, SPL: 0.0000
+2023-06-13 08:38:52, INFO: Average loss : 0.112255, 4286.213104
+2023-06-13 08:42:23, INFO: TRAIN in episode 210 has success rate: 0.00, collision rate: 0.00, collisionobs rate: 0.00, nav time: 500.00, total reward: 0.0000,average return: 0.0000, SPL: 0.0000
+2023-06-13 08:42:51, INFO: Average loss : 0.043967, 4571.243408
+2023-06-13 08:45:22, INFO: TRAIN in episode 211 has success rate: 0.00, collision rate: 0.50, collisionobs rate: 0.00, nav time: 500.00, total reward: -0.0290,average return: -0.1963, SPL: 0.0000
+2023-06-13 08:45:51, INFO: Average loss : 0.532277, 3984.825806
+2023-06-13 08:49:10, INFO: TRAIN in episode 212 has success rate: 0.00, collision rate: 0.00, collisionobs rate: 0.00, nav time: 500.00, total reward: -0.0894,average return: -0.0038, SPL: 0.0000
+2023-06-13 08:49:38, INFO: Average loss : 0.032753, 4260.059570
+2023-06-13 08:51:16, INFO: TRAIN in episode 213 has success rate: 0.00, collision rate: 1.00, collisionobs rate: 0.00, nav time: 500.00, total reward: -0.0140,average return: -0.1349, SPL: 0.0000
+2023-06-13 08:51:45, INFO: Average loss : 0.215949, 4333.673920
+2023-06-13 08:53:43, INFO: TRAIN in episode 214 has success rate: 0.00, collision rate: 1.00, collisionobs rate: 0.00, nav time: 500.00, total reward: -0.1194,average return: -0.2260, SPL: 0.0000
+2023-06-13 08:54:12, INFO: Average loss : 0.260285, 4866.078583
+2023-06-13 08:56:09, INFO: TRAIN in episode 215 has success rate: 0.00, collision rate: 0.50, collisionobs rate: 0.00, nav time: 500.00, total reward: -0.1141,average return: -0.1906, SPL: 0.0000
+2023-06-13 08:56:37, INFO: Average loss : 0.117995, 4186.647308
+2023-06-13 08:57:10, INFO: TRAIN in episode 216 has success rate: 0.00, collision rate: 1.00, collisionobs rate: 0.00, nav time: 500.00, total reward: -0.1586,average return: -0.3087, SPL: 0.0000
+2023-06-13 08:57:39, INFO: Average loss : 0.246137, 4030.571960
+2023-06-13 09:00:54, INFO: TRAIN in episode 217 has success rate: 0.00, collision rate: 0.50, collisionobs rate: 0.00, nav time: 500.00, total reward: -0.0001,average return: -0.0341, SPL: 0.0000
+2023-06-13 09:01:23, INFO: Average loss : 0.218050, 4896.794952
+2023-06-13 09:03:51, INFO: TRAIN in episode 218 has success rate: 0.00, collision rate: 0.50, collisionobs rate: 0.00, nav time: 500.00, total reward: -0.0034,average return: -0.0642, SPL: 0.0000
+2023-06-13 09:04:19, INFO: Average loss : 0.307278, 5107.876007
+2023-06-13 09:04:36, INFO: TRAIN in episode 219 has success rate: 0.00, collision rate: 1.00, collisionobs rate: 0.00, nav time: 500.00, total reward: -0.2951,average return: -0.4173, SPL: 0.0000
+2023-06-13 09:05:05, INFO: Average loss : 0.190435, 4362.070435
+2023-06-13 09:05:53, INFO: TRAIN in episode 220 has success rate: 0.00, collision rate: 0.50, collisionobs rate: 0.00, nav time: 500.00, total reward: -0.8373,average return: -0.5962, SPL: 0.0000
+2023-06-13 09:06:21, INFO: Average loss : 0.169193, 4422.248962
+2023-06-13 09:09:45, INFO: TRAIN in episode 221 has success rate: 0.00, collision rate: 0.00, collisionobs rate: 0.00, nav time: 500.00, total reward: -0.0057,average return: -0.0075, SPL: 0.0000
+2023-06-13 09:10:14, INFO: Average loss : 0.124837, 3517.867615
+2023-06-13 09:11:59, INFO: TRAIN in episode 222 has success rate: 0.00, collision rate: 0.00, collisionobs rate: 0.50, nav time: 500.00, total reward: -0.1123,average return: -0.1249, SPL: 0.0000
+2023-06-13 09:12:28, INFO: Average loss : 0.023337, 3706.349152
+2023-06-13 09:14:59, INFO: TRAIN in episode 223 has success rate: 0.00, collision rate: 0.50, collisionobs rate: 0.00, nav time: 500.00, total reward: -0.0043,average return: -0.0700, SPL: 0.0000
+2023-06-13 09:15:28, INFO: Average loss : 0.101641, 4158.633789
+2023-06-13 09:17:26, INFO: TRAIN in episode 224 has success rate: 0.00, collision rate: 0.50, collisionobs rate: 0.00, nav time: 500.00, total reward: -0.0658,average return: -0.1623, SPL: 0.0000
+2023-06-13 09:17:55, INFO: Average loss : 0.018023, 4480.679840
+2023-06-13 09:18:25, INFO: TRAIN in episode 225 has success rate: 0.00, collision rate: 0.50, collisionobs rate: 0.50, nav time: 500.00, total reward: -0.3756,average return: -0.5883, SPL: 0.0000
+2023-06-13 09:18:54, INFO: Average loss : 0.175595, 4195.415771
+2023-06-13 09:20:24, INFO: TRAIN in episode 226 has success rate: 0.00, collision rate: 1.00, collisionobs rate: 0.00, nav time: 500.00, total reward: -0.0922,average return: -0.2042, SPL: 0.0000
+2023-06-13 09:20:53, INFO: Average loss : 0.283205, 4350.132507
+2023-06-13 09:21:09, INFO: TRAIN in episode 227 has success rate: 0.00, collision rate: 1.00, collisionobs rate: 0.00, nav time: 500.00, total reward: -0.3107,average return: -0.4251, SPL: 0.0000
+2023-06-13 09:21:38, INFO: Average loss : 0.116845, 4601.453979
+2023-06-13 09:22:08, INFO: TRAIN in episode 228 has success rate: 0.00, collision rate: 1.00, collisionobs rate: 0.00, nav time: 500.00, total reward: -0.2382,average return: -0.3512, SPL: 0.0000
+2023-06-13 09:22:36, INFO: Average loss : 0.195883, 4203.665985
+2023-06-13 09:23:10, INFO: TRAIN in episode 229 has success rate: 0.00, collision rate: 1.00, collisionobs rate: 0.00, nav time: 500.00, total reward: -0.1988,average return: -0.3335, SPL: 0.0000
+2023-06-13 09:23:39, INFO: Average loss : 0.041543, 4590.093079
+2023-06-13 09:25:33, INFO: TRAIN in episode 230 has success rate: 0.00, collision rate: 0.50, collisionobs rate: 0.00, nav time: 500.00, total reward: -0.1477,average return: -0.2009, SPL: 0.0000
+2023-06-13 09:26:02, INFO: Average loss : 0.199836, 4609.780609
+2023-06-13 09:28:15, INFO: TRAIN in episode 231 has success rate: 0.00, collision rate: 0.50, collisionobs rate: 0.00, nav time: 500.00, total reward: -0.0313,average return: -0.1017, SPL: 0.0000
+2023-06-13 09:28:43, INFO: Average loss : 0.398356, 4485.429138
+2023-06-13 09:32:11, INFO: TRAIN in episode 232 has success rate: 0.00, collision rate: 0.00, collisionobs rate: 0.00, nav time: 500.00, total reward: -0.0452,average return: -0.0368, SPL: 0.0000
+2023-06-13 09:32:41, INFO: Average loss : 0.173002, 4386.370209
+2023-06-13 09:36:15, INFO: TRAIN in episode 233 has success rate: 0.00, collision rate: 0.00, collisionobs rate: 0.00, nav time: 500.00, total reward: 0.0084,average return: 0.0001, SPL: 0.0000
+2023-06-13 09:36:45, INFO: Average loss : 0.305818, 4589.654602
+2023-06-13 09:39:43, INFO: TRAIN in episode 234 has success rate: 0.00, collision rate: 1.00, collisionobs rate: 0.00, nav time: 500.00, total reward: -0.0175,average return: -0.1003, SPL: 0.0000
+2023-06-13 09:40:12, INFO: Average loss : 0.225086, 4230.804535
+2023-06-13 09:44:02, INFO: TRAIN in episode 235 has success rate: 0.00, collision rate: 0.00, collisionobs rate: 0.00, nav time: 500.00, total reward: -0.0864,average return: -0.0014, SPL: 0.0000
+2023-06-13 09:44:32, INFO: Average loss : 0.433555, 3478.891907
+2023-06-13 09:48:14, INFO: TRAIN in episode 236 has success rate: 0.00, collision rate: 0.00, collisionobs rate: 0.00, nav time: 500.00, total reward: 0.0163,average return: 0.0002, SPL: 0.0000
+2023-06-13 09:48:43, INFO: Average loss : 0.066433, 4537.377563
+2023-06-13 09:48:48, INFO: TRAIN in episode 237 has success rate: 0.00, collision rate: 0.50, collisionobs rate: 0.50, nav time: 500.00, total reward: -0.3984,average return: -0.3860, SPL: 0.0000
+2023-06-13 09:49:18, INFO: Average loss : 0.265367, 3979.349213
+2023-06-13 09:51:30, INFO: TRAIN in episode 238 has success rate: 0.00, collision rate: 0.50, collisionobs rate: 0.00, nav time: 500.00, total reward: -0.0673,average return: -0.1157, SPL: 0.0000
+2023-06-13 09:51:59, INFO: Average loss : 0.249005, 4379.124847
+2023-06-13 09:55:32, INFO: TRAIN in episode 239 has success rate: 0.00, collision rate: 0.50, collisionobs rate: 0.00, nav time: 500.00, total reward: 0.1326,average return: -0.0294, SPL: 0.0000
+2023-06-13 09:56:04, INFO: Average loss : 0.113326, 4066.022980
+2023-06-13 09:58:47, INFO: TRAIN in episode 240 has success rate: 0.00, collision rate: 0.50, collisionobs rate: 0.00, nav time: 500.00, total reward: -0.0220,average return: -0.1069, SPL: 0.0000
+2023-06-13 09:59:20, INFO: Average loss : 0.206166, 3821.820435
