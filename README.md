@@ -1,1 +1,3 @@
 # ObjectNav-HRO
+This is the experimental code for the paper titled "Socially Aware Object Goal Navigation with Heterogeneous Scene Representation Learning".
+Coming Soon ...
